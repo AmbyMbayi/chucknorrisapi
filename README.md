@@ -11,7 +11,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [chucknorrisapi](https://ambymbayi.github.io/chucknorrisapi/) to view it in the browser.
+Open [ chucknorrisapi ](https://ambymbayi.github.io/chucknorrisapi/) to view it in the browser.
 
 ### Making a Progressive Web App
 
