@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from 'axios'
 
@@ -6,13 +6,18 @@ import { Button, Modal, Row, Col, Container } from "react-bootstrap";
 
 
 function App() {
+	const [categories, setCategories] = useState()
+	const [currentCategory, setCurrentCategory] = useState()
+	const [currentCategoryContent, setCurrentCategoryContent] = useState();
 
 	const [show, setShow] = useState(false);
 
-	const handleClose = () => setShow(false);
-	const handleShow = () => setShow(true);
-
-	const [categories, setCategories] = useState(null)
+	
+	const handleShow = (category) => {
+		setShow(true)
+		setCurrentCategory(category)
+		
+	};
 
 	const apiURL  ="https://api.chucknorris.io/jokes/categories"
 
@@ -21,11 +26,24 @@ function App() {
 
 		setCategories(response.data)
 		
-		
 	}
 
+	useEffect(async() => {
+		if(currentCategory){
+			const response = await axios.get('https://api.chucknorris.io/jokes/random?category='+currentCategory);
 
+			if(response && response.data){
+				console.log('returned data', response.data)
+				setCurrentCategoryContent(response.data)
+			}
+		}
+	}, [currentCategory])
 
+	const handleClose = () => {
+		setShow(false);
+		setCurrentCategory(null)
+		setCurrentCategoryContent(null)
+	}
   return (
     <div className="container mt-4 mb-4">
       <div className="mt-3">
@@ -40,7 +58,7 @@ function App() {
         	categories.map((category, index) => {
         	return(
         	 <Col sm={4} key={index}>
-            <Button variant="primary" onClick={handleShow} className="mt-2 p-3 button ">
+            <Button variant="primary" onClick={()=>handleShow(category)} className="mt-2 p-3 button ">
               {category}
             </Button>
           </Col>
@@ -50,11 +68,12 @@ function App() {
         </Row>
       </Container>
 
-      <Modal show={show} onHide={handleClose}>
+      <Modal show={show} onClick={handleClose}>
         <Modal.Header >
-          <Modal.Title>Category Name</Modal.Title>
+          <Modal.Title>{currentCategory}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Category fact</Modal.Body>
+
+        <Modal.Body>{currentCategoryContent && currentCategoryContent.value} </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
