@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,QACC,WAAY,CACZ,WAAY,CACZ,qBAAsB,CACtB,WACD","file":"main.e2c3c182.chunk.css","sourcesContent":[".button{\n\twidth: 150px;\n\theight: 50px;\n\tbackground-color: grey;\n\tborder: none;\n}"]}

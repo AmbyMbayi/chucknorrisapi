@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/chucknorrisapi/static/css/main.afd7172b.chunk.css",
-    "main.js": "/chucknorrisapi/static/js/main.23dd8375.chunk.js",
-    "main.js.map": "/chucknorrisapi/static/js/main.23dd8375.chunk.js.map",
+    "main.css": "/chucknorrisapi/static/css/main.e2c3c182.chunk.css",
+    "main.js": "/chucknorrisapi/static/js/main.b21b3bab.chunk.js",
+    "main.js.map": "/chucknorrisapi/static/js/main.b21b3bab.chunk.js.map",
     "runtime-main.js": "/chucknorrisapi/static/js/runtime-main.76d06983.js",
     "runtime-main.js.map": "/chucknorrisapi/static/js/runtime-main.76d06983.js.map",
-    "static/js/2.2fc03a68.chunk.js": "/chucknorrisapi/static/js/2.2fc03a68.chunk.js",
-    "static/js/2.2fc03a68.chunk.js.map": "/chucknorrisapi/static/js/2.2fc03a68.chunk.js.map",
+    "static/js/2.a0e4299d.chunk.js": "/chucknorrisapi/static/js/2.a0e4299d.chunk.js",
+    "static/js/2.a0e4299d.chunk.js.map": "/chucknorrisapi/static/js/2.a0e4299d.chunk.js.map",
     "index.html": "/chucknorrisapi/index.html",
-    "static/css/main.afd7172b.chunk.css.map": "/chucknorrisapi/static/css/main.afd7172b.chunk.css.map",
-    "static/js/2.2fc03a68.chunk.js.LICENSE.txt": "/chucknorrisapi/static/js/2.2fc03a68.chunk.js.LICENSE.txt"
+    "static/css/main.e2c3c182.chunk.css.map": "/chucknorrisapi/static/css/main.e2c3c182.chunk.css.map",
+    "static/js/2.a0e4299d.chunk.js.LICENSE.txt": "/chucknorrisapi/static/js/2.a0e4299d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.76d06983.js",
-    "static/js/2.2fc03a68.chunk.js",
-    "static/css/main.afd7172b.chunk.css",
-    "static/js/main.23dd8375.chunk.js"
+    "static/js/2.a0e4299d.chunk.js",
+    "static/css/main.e2c3c182.chunk.css",
+    "static/js/main.b21b3bab.chunk.js"
   ]
 }
