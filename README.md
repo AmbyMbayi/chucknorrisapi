@@ -1,7 +1,5 @@
 
 
-https://ambymbayi.github.io/chucknorrisapi/
-
 ## Available Scripts
 ### `git clone https://github.com/AmbyMbayi/chucknorrisapi.git`
 
